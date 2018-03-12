@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/loading/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MyJobs_WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
