@@ -1,11 +1,39 @@
 {
   "pages":[
-    "pages/loading/index"
+    "pages/loading/index",
+    "pages/user/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "MyJobs_WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#09BB07",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/loading/index",
+        "iconPath": "images/icon_unselect_home.png",
+        "selectedIconPath": "images/icon_select_home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/icon_unselect_user.png",
+        "selectedIconPath": "images/icon_select_user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
