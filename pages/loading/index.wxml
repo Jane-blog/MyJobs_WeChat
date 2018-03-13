@@ -27,7 +27,7 @@
     </view>
   </block>
   <view class="load_more" hidden="{{!loading}}">
-    <view class="load-loading"></view>
+    <view class="load_loading"></view>
     <view class="load-tips">正在加载……</view>
   </view>
   <view class="load_end" hidden="{{!loaded}}">没有更多数据了……</view>
