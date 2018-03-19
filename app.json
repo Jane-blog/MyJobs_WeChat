@@ -1,7 +1,12 @@
 {
   "pages":[
-    "pages/loading/index",
-    "pages/user/index"
+    "pages/index/index",
+    "pages/user/index",
+
+    "pages/loading/loading",
+    "pages/loadmore/loadmore"
+        
+        
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -16,7 +21,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/loading/index",
+        "pagePath": "pages/index/index",
         "iconPath": "images/icon_unselect_home.png",
         "selectedIconPath": "images/icon_select_home.png",
         "text": "首页"

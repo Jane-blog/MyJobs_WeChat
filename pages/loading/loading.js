@@ -1,4 +1,4 @@
-var util = require('../../utils/networking.js');
+var networking = require('../../utils/networking.js');
 
 Page({
 
@@ -109,7 +109,7 @@ Page({
     let pageIndex = that.data.pageIndex;
     let userCode = that.data.userCode;
     console.log("pageIndex == ", pageIndex);
-    util.gainData(userCode, pageIndex, function (data) {
+    networking.gainData(userCode, pageIndex, function (data) {
       wx.stopPullDownRefresh(); // 数据请求成功后，停止刷新
       var array = data;
       that.setData({
@@ -128,7 +128,7 @@ Page({
     let pageIndex = that.data.pageIndex;
     let userCode = that.data.userCode;
     console.log("pageIndex == ", pageIndex);
-    util.gainData(userCode, pageIndex, function (data) {
+    networking.gainData(userCode, pageIndex, function (data) {
       if (data.length != 0) { // 数组不为空
         var array = that.data.array.concat(data);
         for (var index in array) {

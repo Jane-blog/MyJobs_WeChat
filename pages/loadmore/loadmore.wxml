@@ -1,0 +1,35 @@
+<view  class="container">
+  <block wx:for="{{array}}" wx:key="{{index}}"> 
+    <view class="section">
+        <view class="section1">
+          <view class="section1-item"  wx:for="{{header_list}}" wx:key="{{index}}">
+          <view class="item1-title">{{item.title}}</view>
+          <view class="item1-icon"></view>
+          </view>
+        </view>
+
+        <view class="section2">
+          <view class="section2-item">
+            <view class="item2-left">编号:{{item.orderCode}}</view>
+            <view class="item2-right">时间:{{item.orderTime}}</view>
+          </view>
+
+          <view class="section2-item">
+            <view class="item2-left">配置:{{item.carType}}</view>
+            <view class="item2-right">颜色:{{item.carColor}}</view>
+          </view>
+
+        </view>
+        <view class="section3">
+        </view>
+        <view class="section4">
+        </view>
+    </view>
+  </block>
+  <view class="load_more" hidden="{{!loading}}">
+    <view class="load_loading"></view>
+    <view class="load-tips">正在加载……</view>
+  </view>
+  <view class="load_end" hidden="{{!loaded}}">没有更多数据了……</view>
+
+</view>
