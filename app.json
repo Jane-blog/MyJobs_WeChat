@@ -4,7 +4,8 @@
     "pages/user/index",
 
     "pages/loading/loading",
-    "pages/loadmore/loadmore"
+    "pages/loadmore/loadmore",
+    "pages/switch/switch"
         
         
   ],

@@ -1,0 +1,37 @@
+.container {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.flag-item0 {
+  margin: 20rpx 2% 20rpx 2%;
+  width: 20%;
+  border: 1px solid gainsboro;
+  float: left;
+  text-align: center;
+  line-height: 40px;  
+  color: gainsboro;
+}
+
+
+.flag-item1 {
+  margin: 20rpx 2% 20rpx 2%;
+  width: 20%;
+  border: 1px solid #000;
+  float: left;
+  text-align: center;
+  line-height: 40px;  
+}
+
+
+.flag-item2 {
+  background-color: red;
+  margin: 20rpx 2% 20rpx 2%;
+  width: 20%;
+  border: 1px solid red;
+  float: left;
+  text-align: center;
+  line-height: 40px;  
+}

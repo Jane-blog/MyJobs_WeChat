@@ -14,7 +14,12 @@ Page({
         id: "load",
         name: "上拉加载,获取更多",
         page: "loadmore"
-      }
+      },
+       {
+         id: "switch",
+        name: "组件切换时改变样式",
+        page: "switch"
+      },
     ]
   },
 
