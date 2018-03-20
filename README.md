@@ -12,6 +12,11 @@
 2. 实现了下拉刷新，上拉加载更多
 3. 单独的上拉加载，获取更多数据
 
+## 微信小程序--多个button/view组件行切换时改变样式 </br>
+
+ ![images/icon_switch.gif](images/loading.gif)
+ 1. 实现了购物车的尺寸或是型号选择（不可选、可单选）
+ 
 ### 详情介绍
 [我的博客](http://blog.csdn.net/cituses)
 [我的简书](https://www.jianshu.com/u/06c3956da505)
