@@ -1,7 +1,7 @@
 <view  class="container">
   <block wx:for="{{list}}" wx:key="{{index}}">
     <!-- <view class="flag-item"> {{item.title}} </view>  -->
-    <view wx:if="{{item.stock <= 0}}" class="flag-item0" bindtap="clickedBtn"> {{item.title}} </view> 
+    <view wx:if="{{item.stock <= 0}}" class="flag-item0" bindtap="clickedBtn" data-id="{{index}}" > {{item.title}} </view> 
      <view wx:elif="{{item.stock > 0}}" class="{{index == current_tag?'flag-item2':'flag-item1'}}" bindtap="clickedAction" data-id="{{index}}"> {{item.title}} </view> 
   </block>
 </view>

@@ -119,8 +119,14 @@ Page({
   /**
    * 库存为0，不可选
    */
-  clickedBtn:function() {
+  clickedBtn: function (responseObject) {
     util.progressTips("补货中，请耐心等待")
+    let that = this;
+    var id = responseObject.currentTarget.dataset.id;  //获取自定义的ID值 
+    console.log("current_tag", id)
+    this.setData({
+      current_tag: id,
+    })
   },
 
   /**
