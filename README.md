@@ -5,7 +5,7 @@
 
 ## 微信小程序--下拉刷新，下拉加载 </br>
 
- ![images/loading.gif](images/loading.gif)
+ ![下拉刷新，下拉加载](images/loading.gif)
  
  ### 实现功能
 1. 实现了网络请求
@@ -14,7 +14,7 @@
 
 ## 微信小程序--多个button/view组件行切换时改变样式 </br>
 
- ![images/icon_switch.gif](images/loading.gif)
+ ![组件切换](images/icon_switch.gif)
  1. 实现了购物车的尺寸或是型号选择（不可选、可单选）
  
 ### 详情介绍
