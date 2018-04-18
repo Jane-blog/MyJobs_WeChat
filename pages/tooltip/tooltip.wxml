@@ -1,0 +1,7 @@
+
+<modal title="提示框名称" hidden="{{modalHidden}}"
+ bindconfirm="modalConfirm" bindcancel="modalCancel">
+<view class="tipbox">
+授权失败
+</view>
+</modal>

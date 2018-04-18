@@ -5,7 +5,8 @@
 
     "pages/loading/loading",
     "pages/loadmore/loadmore",
-    "pages/switch/switch"
+    "pages/switch/switch",
+    "pages/tooltip/tooltip"
         
         
   ],
