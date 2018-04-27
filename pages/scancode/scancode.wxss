@@ -1,0 +1,17 @@
+
+.code-input {
+  margin: 60rpx 25rpx;
+  width: 700rpx;
+  height: 180rpx;
+}
+
+.code-input input{
+  border: 1rpx solid lightgray;
+  font-size: 14px;
+}
+
+.btn-area{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}

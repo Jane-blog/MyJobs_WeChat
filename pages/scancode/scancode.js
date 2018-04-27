@@ -4,33 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
-      {
-        id:"load",
-        name:"下拉刷新，上拉加载",
-        page: "loading"
-      },
-      {
-        id: "load",
-        name: "上拉加载,获取更多",
-        page: "loadmore"
-      },
-      {
-         id: "switch",
-        name: "组件切换时改变样式",
-        page: "switch"
-      },
-      {
-        id: "tooltip",
-        name: "提示框",
-        page: "tooltip"
-      },
-      {
-        id: "scancode",
-        name: "扫码",
-        page: "scancode"
-      }
-    ]
+    result: '展示扫码结果'
+
   },
 
   /**
@@ -87,5 +62,17 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+  scanCode: function () {
+    var that = this
+    wx.scanCode({
+      success: function (res) {
+        that.setData({
+          result: res.result
+        })
+      },
+      fail: function (res) {
+      }
+    })
+  },
 })

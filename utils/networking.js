@@ -1,7 +1,7 @@
 
 function gainData(userCode, pageIndex, success, fail) {
   wx.request({
-    url: "https://api.tms.zc.baiccl.com/fv_app_edi/fvapp/transportNodeQuery",//接口地址  
+    url: "",//接口地址  
     method: 'POST',
     data: {
       userCode: userCode,

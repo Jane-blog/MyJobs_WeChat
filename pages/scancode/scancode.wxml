@@ -1,0 +1,10 @@
+<view  class="container">
+  <view class="code-input">
+    <input placeholder="{{result}}" ></input>
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" bindtap="scanCode">扫一扫</button>
+  </view>
+
+</view>
