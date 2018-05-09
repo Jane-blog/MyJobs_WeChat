@@ -1,48 +1,21 @@
+var address = require('../../utils/address.js')
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[
-      {
-        id:"load",
-        name:"下拉刷新，上拉加载",
-        page: "loading"
-      },
-      {
-        id: "load",
-        name: "上拉加载,获取更多",
-        page: "loadmore"
-      },
-      {
-         id: "switch",
-        name: "组件切换时改变样式",
-        page: "switch"
-      },
-      {
-        id: "tooltip",
-        name: "提示框",
-        page: "tooltip"
-      },
-      {
-        id: "scancode",
-        name: "扫码",
-        page: "scancode"
-      },
-      {
-        id: "selector",
-        name: "选择器",
-        page: "selector"
-      }
-    ]
+    regionId: '',
+    location: '',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+   
   },
 
   /**
@@ -56,7 +29,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    console.log("位置信息", this.data.regionId, this.data.location, );
   },
 
   /**
@@ -92,5 +65,24 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+
+  /**
+   * 三级联动地址选择
+   */
+  selector1Action:function(){
+    wx.navigateTo({
+      url: '/pages/selector/picker/picker',
+    })
+  },
+
+  /**
+   * 三级分选地址选择
+   */
+  selector2Action: function () {
+    wx.navigateTo({
+      url: '/pages/selector/city/city',
+    })
   }
+
 })

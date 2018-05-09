@@ -5,6 +5,6 @@
 }
 .navigator-text {
   padding: 40rpx 20rpx 40rpx 20rpx;
-  font-size: 34rpx;
+  font-size: 14px;
 
 }

@@ -1,0 +1,18 @@
+ <view class="container">
+  <scroll-view class="section-left" scroll-y>
+    <view class="province" bindtap="selectProvinceAction" wx:for="{{provinces}}" wx:key="{{index}}" data-id="{{index}}" style="{{index == province_tag?'border-bottom: 1rpx solid #e05b56; color: #e05b56':'color:#8a8a8a'}}">{{item.name}}</view>
+  </scroll-view>
+  <view class="section-center">
+    <view class="select-text" >
+      <text>选择此城市</text>
+    </view>
+    <view class="select-item" bindtap="selectCityAction" wx:for="{{citys}}" wx:key="{{index}}" data-id="{{index}}" style="{{index == city_tag?' color: #e05b56':'color:#8a8a8a'}}">{{item.name}}
+    </view> 
+  </view>
+  <view class="section-right">
+    <view class="select-text">
+      <text>选择此区县</text>
+    </view>
+    <view class="select-item" bindtap="selectCountyAction" wx:for="{{countys}}" wx:key="{{index}}" data-id="{{index}}" style="{{index == county_tag?' color: #e05b56':'color:#8a8a8a'}}">{{item.name}}</view> 
+  </view>
+</view> 

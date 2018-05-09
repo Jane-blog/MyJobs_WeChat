@@ -1,0 +1,4 @@
+<view  class="container">
+  <view class="selector" bindtap="selector1Action">三级联动地址选择</view>
+  <view class="selector" bindtap="selector2Action">三级分选地址选择</view>
+</view>

@@ -4,38 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
-      {
-        id:"load",
-        name:"下拉刷新，上拉加载",
-        page: "loading"
-      },
-      {
-        id: "load",
-        name: "上拉加载,获取更多",
-        page: "loadmore"
-      },
-      {
-         id: "switch",
-        name: "组件切换时改变样式",
-        page: "switch"
-      },
-      {
-        id: "tooltip",
-        name: "提示框",
-        page: "tooltip"
-      },
-      {
-        id: "scancode",
-        name: "扫码",
-        page: "scancode"
-      },
-      {
-        id: "selector",
-        name: "选择器",
-        page: "selector"
-      }
-    ]
+    
   },
 
   /**

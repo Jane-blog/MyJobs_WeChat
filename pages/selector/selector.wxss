@@ -1,0 +1,11 @@
+.selector {
+  background-color: white;
+  width: 350rpx;
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+  margin: 40rpx 200rpx;
+  font-size:16px;
+  border: 1rpx solid orange;
+  border-radius: 10rpx;
+}

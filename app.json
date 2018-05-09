@@ -7,7 +7,12 @@
     "pages/loadmore/loadmore",
     "pages/switch/switch",
     "pages/tooltip/tooltip",
-    "pages/scancode/scancode"
+    "pages/scancode/scancode" ,
+
+    "pages/selector/selector",
+    "pages/selector/picker/picker",
+    "pages/selector/city/city"
+    
         
         
   ],
