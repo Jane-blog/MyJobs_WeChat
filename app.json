@@ -8,6 +8,8 @@
     "pages/switch/switch",
     "pages/tooltip/tooltip",
     "pages/scancode/scancode" ,
+    "pages/location/location",
+    
 
     "pages/selector/selector",
     "pages/selector/picker/picker",

@@ -1,0 +1,4 @@
+<view  class="container">
+  <view  class="item-info">天气信息：{{weatherData}}</view>
+  <view  class="item-info">地址信息：{{location}}</view>
+</view>

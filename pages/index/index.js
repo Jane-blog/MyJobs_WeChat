@@ -34,6 +34,11 @@ Page({
         id: "selector",
         name: "选择器",
         page: "selector"
+      },
+      {
+        id: "location",
+        name: "定位",
+        page: "location"
       }
     ]
   },

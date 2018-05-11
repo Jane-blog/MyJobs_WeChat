@@ -1,0 +1,5 @@
+.item-info {
+  background-color: white;
+  margin: 40rpx 40rpx;
+  font-size: 14px;
+}
