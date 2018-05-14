@@ -1,4 +1,5 @@
-
+var util = require('../../utils/util.js');  
+var interval = null //倒计时函数
 
 Page({
 
@@ -6,7 +7,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    username: '',
+    password: '', 
+    authcode: '',
+    time: '获取验证码', //倒计时 
+    currentTime: 60,//限制60s
+    isClick:false,//获取验证码按钮，默认允许点击
   },
 
   /**
@@ -185,6 +191,75 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+    
+  },
+
+  /**
+   * 用户名和密码 
+   * */
+  usernameInput: function (event) {
+    // console.log("username==",event.detail.value)
+    this.setData({ username: event.detail.value })
+  },
+
+  passwordInput: function (event) {
+    // console.log("password==", event.detail.value)
+    this.setData({ password: event.detail.value })
+  },
+
+  authcodeInput: function (event) {
+    // console.log("password==", event.detail.value)
+    this.setData({ authcode: event.detail.value })
+  },
+
+  /**
+   * 获取验证码
+   */
+  gainAuthCodeAction:function(){
+    let that = this;
+    /*第一步：验证手机号码*/
+    var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1}))+\d{8})$/;// 判断手机号码的正则
+    if (that.data.username.length == 0) {
+      util.progressTips('手机号码不能为空')
+      return;
+    }
+
+    if (that.data.username.length < 11) {
+      util.progressTips('手机号码长度有误！')
+      return;
+    }
+
+    if (!myreg.test(that.data.username)) {
+      util.progressTips('错误的手机号码！')
+      return;
+    }
+    /*第二步：设置计时器*/
+    // 先禁止点击
+    that.setData({
+      isClick: true,
+    })
+    var currentTime = that.data.currentTime;
+    interval = setInterval(function(){
+      currentTime--;//减
+      that.setData({
+        time: currentTime + '秒后获取'
+      })
+      if (currentTime <= 0) {
+        clearInterval(interval)
+        that.setData({
+          time: '获取验证码',
+          currentTime: 60,
+          isClick: false
+        })
+      }
+    },1000);
+  },
+
+  /**
+   * 登录
+   */
+  loginBtnClick: function () {
+    let that = this;
     
   }
 })

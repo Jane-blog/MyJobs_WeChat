@@ -1,0 +1,76 @@
+.section {
+  margin-top: 20rpx;
+}
+
+.section-item {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1rpx solid lightgray;
+}
+
+.section-tips {
+  float: left;
+  margin: 0rpx 20rpx;
+  width: 210rpx;
+  height: 120rpx;
+  line-height:120rpx; 
+  font-size: 14px;
+}
+
+.section-input {
+  float: left;
+  width: 500rpx;
+  height: 120rpx;
+}
+
+.section-input input {
+  width: 100%;
+  height: 100%;
+  line-height:100%;
+  font-size: 13px;
+}
+
+.section-input1 {
+  float: left;
+  width: 300rpx;
+  height: 120rpx;
+}
+
+.section-input1 input {
+  width: 100%;
+  height: 100%;
+  line-height:100%;
+  font-size: 13px;
+}
+
+.section-code {
+  float: left;
+  width: 200rpx;
+  height: 120rpx;
+  background-color: white;
+  text-align: left;
+}
+
+.section-code:after{
+  border: none;
+}
+
+.section-code text{
+  font-size: 12px;
+  line-height:  120rpx;
+  color: #e05b56;
+  border-bottom: 1rpx solid #e05b56;
+}
+
+.section-btn {
+  background-color: #2ac5f4;
+  margin: 60rpx 50rpx;
+  width: 650rpx;
+  height: 80rpx;
+  font-size: 15px;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  border: none;
+}

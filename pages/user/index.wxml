@@ -1,3 +1,36 @@
-<view  class="container">
+<view class="container">
+  <view class="section">
+    <view class="section-item">
+      <view class="section-tips">
+        <label>账户</label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入手机号码" bindinput="usernameInput"></input>
+      </view>
+    </view>
+    <view class="section-item">
+      <view class="section-tips">
+        <label>密码</label>
+      </view>
+      <view class="section-input">
+        <input placeholder="请输入密码" bindinput="passwordInput" password="true"></input>
+      </view>
+    </view>
 
+    <view class="section-item">
+      <view class="section-tips">
+        <label>验证码</label>
+      </view>
+      <view class="section-input1">
+        <input placeholder="请输入验证码" bindinput="authcodeInput" password="true"></input>
+      </view>
+      <button class="section-code" disabled="{{isClick}}"  bindtap="gainAuthCodeAction">
+       <text>{{time}}</text>
+      </button>
+    </view>
+  </view>
+
+  <view>
+    <button class="section-btn" bindtap="loginBtnClick">登  录  </button>
+  </view>
 </view>
