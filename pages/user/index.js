@@ -234,10 +234,11 @@ Page({
       return;
     }
     /*第二步：设置计时器*/
-    // 先禁止点击
+    // 先禁止获取验证码按钮的点击
     that.setData({
       isClick: true,
     })
+    // 60s倒计时 setInterval功能用于循环，常常用于播放动画，或者时间显示
     var currentTime = that.data.currentTime;
     interval = setInterval(function(){
       currentTime--;//减
@@ -253,6 +254,8 @@ Page({
         })
       }
     },1000);
+    /*第三步：请求验证码接口，并记录服务器返回的验证码用于判断，这里服务器也可能不返回验证码，那验证码的判断交给后台*/
+    // wx.request({})
   },
 
   /**
@@ -260,6 +263,7 @@ Page({
    */
   loginBtnClick: function () {
     let that = this;
-    
+    // 判断账户、密码、验证码
+    // wx.request({})
   }
 })
