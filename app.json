@@ -9,6 +9,7 @@
     "pages/tooltip/tooltip",
     "pages/scancode/scancode" ,
     "pages/location/location",
+    "pages/timer/timer",
     
 
     "pages/selector/selector",

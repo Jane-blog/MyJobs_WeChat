@@ -1,0 +1,6 @@
+<view  class="container">
+  <view  class="timer">{{day}}天</view>
+  <view  class="timer">{{hour}}时</view>
+  <view  class="timer">{{minute}}分</view>
+  <view  class="timer">{{second}}秒</view>
+</view>

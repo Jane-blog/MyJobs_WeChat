@@ -39,6 +39,11 @@ Page({
         id: "location",
         name: "定位",
         page: "location"
+      },
+      {
+        id: "timer",
+        name: "计时器",
+        page: "timer"
       }
     ]
   },

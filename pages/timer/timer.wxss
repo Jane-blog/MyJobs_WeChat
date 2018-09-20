@@ -1,0 +1,42 @@
+.container {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 100rpx;
+}
+
+
+
+.timer {
+  float: left;
+  width: 25%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  animation: fade 600ms infinite;
+  -webkit-animation: fade 600ms infinite;
+}
+
+@keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
