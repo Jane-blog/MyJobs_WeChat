@@ -10,6 +10,7 @@
     "pages/scancode/scancode" ,
     "pages/location/location",
     "pages/timer/timer",
+    "pages/image/image",
     
 
     "pages/selector/selector",

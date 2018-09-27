@@ -45,6 +45,12 @@ Page({
         name: "计时器",
         page: "timer"
       }
+      ,
+      {
+        id: "image",
+        name: "图片",
+        page: "image"
+      }
     ]
   },
 

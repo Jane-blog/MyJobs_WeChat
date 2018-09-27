@@ -1,0 +1,25 @@
+<view  class="container">
+
+  <view class="section1">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{carouselImgUrls}}" wx:key="{{index}}">
+          <swiper-item>
+          <image src="{{item}}" style="width:100%;height:100%" />
+          </swiper-item>
+        </block>
+    </swiper>   
+  </view>
+
+  <view class="section2">
+   <swiper class="section2-swiper-container" vertical="true" autoplay="true" circular="true" interval="2000">
+        <swiper-item wx:for="{{carouselImg_list}}" wx:key="{{index}}">
+        <view class="section2-swiper-item"  wx:for="{{item.news}}" wx:for-item="news_item"  wx:key="{{index}}" >恭喜【<text class="section2-swiper-item-text">{{news_item}}</text>】成为我的师公呢！！！</view>
+        </swiper-item> 
+    </swiper>
+  </view>
+
+  <view class="section3">
+    <button bindtap='saveImageAction'>保存图片到手机相册</button>
+  </view>
+</view>

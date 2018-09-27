@@ -1,0 +1,22 @@
+.section3 {
+  margin-top: 60rpx;
+}
+
+.section2 {
+  background-color: #ffffff;
+}
+
+.section2-swiper-container {
+  margin: 20rpx 20rpx ;
+  width: 750rpx;
+  height: 120rpx;
+  font-size:32rpx;
+}
+
+.section2-swiper-item {
+  color: #666666;
+}
+
+.section2-swiper-item-text {
+  color: #e05b56;
+}
