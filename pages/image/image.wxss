@@ -11,10 +11,13 @@
   width: 750rpx;
   height: 120rpx;
   font-size:32rpx;
+  text-align: center;
 }
 
 .section2-swiper-item {
   color: #666666;
+  height: 60rpx;
+  line-height: 60rpx;
 }
 
 .section2-swiper-item-text {
